@@ -42,6 +42,13 @@ if ($hassiteconfig) {
             '',
             PARAM_TEXT));
 
+        // Setting to store OpenAI assistant ID.
+        $settings->add(new admin_setting_configtext('tiny_ai/assistantid',
+            new lang_string('assistantid', 'tiny_ai'),
+            new lang_string('assistantid_desc', 'tiny_ai'),
+            '',
+            PARAM_TEXT));
+
         // Array of personality options.
         $personalityoptions = array(
             0 => new lang_string('personality_undergrad', 'tiny_ai'),
